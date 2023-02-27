@@ -7,7 +7,7 @@
        margin:0 auto;
        margin-bottom: 1rem;
        h2{
-         @include  set.head_style(32px,700,#474C5A);
+         @include  set.head_style(24px,700,#474C5A);
        }
        .refres_btn{
          margin-top: 26px;
@@ -58,5 +58,28 @@
   }
 }
 
+
+@media (min-width:992px) {
+   
+   
+.filter{
+   .btns_container{
+ 
+       h2{
+         @include  set.head_style(32px,700,#474C5A);
+       }
+    
+
+ 
+   }
+
+   
+  .filter_box{ 
+   margin-top: 3rem;
+ 
+  }
+}
+
+}
 
  
