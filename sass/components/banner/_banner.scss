@@ -1,0 +1,123 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+// banner
+.banner {
+  .container {
+    .row {
+      background: #f7f7fa;
+      // link
+      .list {
+        margin: 0 !important;
+        padding: 0;
+        li {
+          width: 100%;
+          position: relative;
+          padding: 12px 0px;
+          cursor: pointer;
+          .dropdown {
+            padding: 0px 8px;
+            a {
+              @include set.link_style(14px, 400, #787e8d);
+              img {
+                padding-right: 10px;
+              }
+            }
+          }
+
+          .dropdown_menu {
+            z-index: 100;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            transform: translateX(100%);
+            transition: 0.3s;
+            a {
+              padding: 10px 5px;
+              @include set.link_style(14px, 400, #787e8d);
+              background: style.$text_white;
+              img {
+                padding-right: 10px;
+              }
+              &:hover {
+                color: style.$text_red !important;
+              }
+            }
+          }
+          &:hover .dropdown_menu {
+            display: block !important;
+          }
+          &:hover .dropdown a,
+          img {
+            color: style.$text_red !important;
+          }
+        }
+      }
+      //  swiper
+      .swiper_bg {
+        position: relative;
+
+        .swiper {
+          overflow-x: hidden;
+
+          .swiper-wrapper {
+            .swiper-slide {
+              .title {
+                h1 {
+                  @include set.head_style(30px, 700, #ff0000);
+                }
+                h4 {
+                  @include set.head_style(18px, 600, #cacaca);
+                }
+              }
+              .img-fluid {
+                max-width: 70%;
+              }
+            }
+          }
+          .swiper-pagination {
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            right: 0;
+          }
+          .swiper-pagination-bullet {
+            background: style.$text_red !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query
+@media (min-width: 768px) {
+  .banner {
+    .swiper-slide {
+      .title {
+        h1 {
+          font-size: 48px !important;
+        }
+        h4 {
+          font-size: 28px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    .swiper-slide {
+      .title {
+        h1 {
+          font-size: 60px !important;
+        }
+        h4 {
+          font-size: 36px !important;
+        }
+      }
+    }
+  }
+}

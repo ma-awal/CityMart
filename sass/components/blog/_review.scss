@@ -1,0 +1,158 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+.reviews{
+   padding:2rem 0rem;
+   .container{
+      h1{
+         @include set.head1_base;
+         margin-bottom: 1rem;
+         ;
+      }
+      .single_review{
+         gap:20px;
+      
+           .img{
+             
+            object-fit:cover;
+             
+           }
+       
+         .review_cont{
+            h6{
+               @include set.head6_base;
+            }
+            button{
+               @include set.review_btn;
+                
+            }
+            p{
+               @include set.text_sm;
+            }
+            a{
+               @include set.blog_link;
+               margin-bottom: 2rem;;
+               border:none!important;
+            }
+            .date_time{
+               margin-left:0!important;;
+               ;
+               .icon{
+                  @include set.text_xs;
+
+               }
+               .time{
+                  @include set.text_xs;
+               }
+            }
+         }
+      
+      }
+      .popular{
+         h2{
+            @include set.head2_lg;
+            border-bottom: 3px solid #B5B6C2;;
+            border-radius:3px;;
+            position: relative;
+            padding-bottom: .5rem;;
+            margin-bottom: 2rem;;
+            &::after{content: "";
+               position: absolute;;
+               top: 100%;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               width: 30%;
+               color:red!important;
+                height:3px;;
+               background: red!important;
+            }
+         }
+         .popular_review{
+            gap:20px;
+            img{ max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+            .popular_cont{
+                h6{
+                  @include set.head6_base;
+                   
+                }
+               .date_time{
+                  .icon{
+                     @include set.text_sm;
+                  }
+                  .time{
+                     @include set.text_sm;
+                  }
+               }
+            }
+         }
+         .swiper{
+            h2{
+               @include set.head2_lg;
+               border-bottom: 3px solid #B5B6C2;;
+               border-radius:3px;;
+               position: relative;
+               padding-bottom: .5rem;;
+               margin-bottom: 1rem;;
+               &::after{content: "";
+                  position: absolute;;
+                  top: 100%;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 30%;
+                  color:red!important;
+                   height:3px;;
+                  background: red!important;
+               }
+            }
+          
+            .swiper-pagination {
+               position: absolute;
+               bottom: 3rem;
+               left: 0;
+               right: 0;
+             }
+             .swiper-pagination-bullet {
+               background: style.$text_red !important;
+             }
+         }
+      }
+   }
+}
+
+
+@media (min-width:992px) {
+   .reviews{
+      padding:3rem 0rem;
+      .container{
+         h1{
+            @include set.head1_lg;
+            margin-bottom: 2rem;
+            ;
+         }
+         .single_review{
+            gap:25px;
+            .reviw_img{
+               width: 100%;
+               object-fit: contain;
+               min-width: 300px;;
+                min-height: 400px;
+                overflow: hidden;
+            }
+            .review_cont{
+                
+ 
+               p{
+                  @include set.text_base;
+               }
+ 
+ 
+            }
+         
+         }
+      }
+   }
+}

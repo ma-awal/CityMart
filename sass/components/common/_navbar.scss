@@ -1,0 +1,30 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.nav_bar {
+  background: style.$text_red;
+  padding: 0;
+  margin: 0;
+
+  .navbar-brand {
+    font-size: style.$text_base;
+    font-weight: style.$font_bold;
+    color: style.$text_white;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: style.$text_base !important;
+        font-weight: style.$font_medium !important;
+        color: style.$text_white;
+      }
+    }
+  }
+  .hot_line {
+    a {
+      font-size: style.$text_base !important;
+      font-weight: style.$font_medium !important;
+      color: style.$text_white;
+    }
+  }
+}

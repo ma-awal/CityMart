@@ -1,0 +1,185 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.f_question {
+  padding: 2rem 0rem;
+  .container {
+    // hea line
+    .head_line {
+      margin-bottom: 1rem;
+      h2 {
+        @include set.head_style(22px, 600, #ff0000);
+      }
+      h3 {
+        @include set.head_style(20px, 600, #474c5a);
+      }
+      p {
+        @include set.para_style(14px, 600, #bbbbbb);
+      }
+    }
+
+    .content {
+      padding: 1rem 0rem;
+
+      .tab {
+        // tab btns
+        .tab_btns {
+          margin-bottom: 1rem;
+          .btn {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-shadow: none;
+            outline: none;
+            @include set.para_style(14px, 400, #474c5a);
+          }
+        }
+
+        .faq_container {
+          .tabcontent {
+            display: none;
+            .acc {
+              .acc-btn {
+                @include set.para_style(14px, 500, #263238);
+                width: 100%;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                  padding-top: 0.7rem;
+                  span {
+                    color: #ff0000;
+                  }
+                }
+                &::after {
+                  font-family: "Font Awesome Free";
+                  content: "\002B";
+                  color: black;
+                  font-weight: bold;
+                  font-size: style.$text_2xl !important;
+                }
+                &.active {
+                  color: #ff0000;
+                }
+                &.active::after {
+                  content: "\2212";
+                  font-weight: 600px;
+                  color: #ff0000;
+                }
+              }
+
+              .panel {
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.2s ease-out;
+                p {
+                  @include set.para_style(12px, 400, #474c5a);
+                }
+              }
+            }
+            &.active {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .f_question {
+    padding: 2rem 0rem;
+    .container {
+      // hea line
+      .head_line {
+        margin-bottom: 3rem;
+        h2 {
+          @include set.head_style(32px, 600, #ff0000);
+        }
+        h3 {
+          @include set.head_style(36px, 600, #474c5a);
+        }
+        p {
+          @include set.para_style(14px, 500, #bbbbbb);
+        }
+      }
+
+      .content {
+        padding: 1rem 0rem;
+
+        .tab {
+          // tab btns
+          .tab_btns {
+            margin-bottom: 1rem;
+            .btn {
+              border-radius: 0;
+              padding-bottom: 0.2rem;
+              margin: 0 !important;
+              padding: 0 !important;
+              box-shadow: none;
+              outline: none;
+              @include set.para_style(16px, 500, #474c5a);
+              &.active {
+                border-bottom: 2px solid red;
+              }
+            }
+          }
+
+          .faq_container {
+            .tabcontent {
+              display: none;
+              .acc {
+                .acc-btn {
+                  @include set.para_style(16px, 500, #263238);
+                  width: 100%;
+                  background: transparent;
+                  border: none;
+                  box-shadow: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  p {
+                    padding-top: 0.7rem;
+                    span {
+                      color: #ff0000;
+                    }
+                  }
+                  &::after {
+                    font-family: "Font Awesome Free";
+                    content: "\002B";
+                    color: black;
+                    font-weight: bold;
+                    font-size: style.$text_2xl !important;
+                  }
+                  &.active {
+                    color: #ff0000;
+                  }
+                  &.active::after {
+                    content: "\2212";
+                    font-weight: 600px;
+                    color: #ff0000;
+                  }
+                }
+
+                .panel {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: 0.2s ease-out;
+                  p {
+                    @include set.para_style(14px, 400, #474c5a);
+                  }
+                }
+              }
+              &.active {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

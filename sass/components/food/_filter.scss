@@ -1,0 +1,62 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.filter{
+   .btns_container{
+      max-width: 1123px;
+       margin:0 auto;
+       margin-bottom: 1rem;
+       h2{
+         @include  set.head_style(32px,700,#474C5A);
+       }
+       .refres_btn{
+         margin-top: 26px;
+         padding:10px,20px;
+         border-radius: 15px;
+         background:rgba(80, 206, 92, 0.1);
+         width:140px;
+         height: 44px;
+         vertical-align: center;;
+         color:#50CE5C;
+         font-size: 14px;;
+         text-transform:capitalize;
+          margin-bottom: 32px;
+       }
+
+
+       .filter_btns{
+         .btn{
+            padding:8px,16px;
+            border-radius: 12px;
+            font-size: style.$text_sm;
+            font-weight: style.$font_normal;
+            color:rgba(71, 76, 90, 0.6);
+            background: rgba(215, 215, 215, 0.2);
+            text-transform: capitalize;;
+            margin-right: 10px;
+            display: inline-block;
+         }
+      }
+   }
+
+   
+  .filter_box{ 
+    .row{
+      .single_box{
+         text-transform:capitalize;
+         a{text-decoration: none;
+            img{
+               border-radius: 12px;;
+               margin-bottom: 1rem;;
+            }
+            p{
+               @include set.para_style(12px,500,#474C5A)
+            }
+         }
+       }
+    }
+  }
+}
+
+
+ 

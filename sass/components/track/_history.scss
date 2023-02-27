@@ -1,0 +1,61 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.tarck_history{
+   padding:3rem 0rem;
+   h1{
+     @include set.head_style(20px,600,#474C5A);
+     margin-bottom: 2rem;
+   }
+   .single_icon{
+      .icon{
+         p{ 
+            @include set.para_style(14px,400,#474C5A);
+
+         }
+
+      }
+      .para{
+         @include set.para_style(14px,400,#BBBBBB);
+
+      }
+   }
+}
+
+@media (min-width:992px) {
+  .tarck_history{
+   padding:3rem 0rem;
+   h1{
+      @include set.head_style(24px,600,#474C5A);
+      margin-bottom: 3rem;
+    }
+    .single_icon{
+       .icon{
+          p{ margin-top: 2rem;
+             @include set.para_style(16px,400,#474C5A);
+ 
+          }
+ 
+       }
+       .para{
+          @include set.para_style(16px,400,#BBBBBB);
+ 
+       }
+    }
+  }
+ }
+   
+ 
+
+ @media (min-width:1180px) {
+   .tarck_history{
+      padding:4rem 0rem;
+      h1{
+         @include set.head_style(32px,600,#474C5A);
+         margin-bottom: 5rem;
+       }
+   }
+ 
+ }
+   
+ 

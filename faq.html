@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CITYMart</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./all/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./all/bootstrap/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./all/swiper/swiper.min.css" />
+
+    <link rel="stylesheet" href="./Index/main.css" />
+  </head>
+  <body>
+    <!-- ========== Start header ========== -->
+    <section class="header">
+      <!-- top_bar_start -->
+      <div class="container-fluid top_bar">
+        <div
+          class="container top_links d-xxl-flex justify-content-between align-items-center d-none"
+        >
+          <!-- left_icon -->
+          <div class="left_icon text-capitalize">
+            <a href="faq.html"><img src="img/Faqs-icon.png" alt="" />FAQ's</a>
+            <a href="track.html"
+              ><img src="img/track-icon.png" alt="" />track order</a
+            >
+            <a href="#" class="locate_link"
+              ><img src="img/location-icon.png" alt="" /> locator</a
+            >
+            <!-- location -->
+            <div
+              class="location d-flex justify-content-center align-items-center position-fixed top-0 bottom-0 right-0 start-0 w-100 h-100"
+            >
+              <!-- Location_form -->
+              <form
+                action=""
+                class="location_form text-center px-3"
+                style="width: 400px; height: 450px"
+              >
+                <div class="mb-5 mt-3 text-capitalize">
+                  <input
+                    type="name"
+                    class="name py-3 px-3 border-0"
+                    id="name"
+                    placeholder="city name"
+                  />
+                </div>
+                <div class="mb-5 text-capitalize">
+                  <input
+                    type="text"
+                    class="name py-3 px-3 border-0"
+                    id="name"
+                    placeholder=" location area"
+                  />
+                </div>
+                <div class="location_btn">
+                  <button
+                    class="btn btn-lg bg-danger fs-6 text-white py-1 px-3 rounded"
+                  >
+                    locate
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- right icon -->
+          <div class="right d-flex align-items-center">
+            <div class="select">
+              <select class="form-select" id="">
+                <option selected>EN</option>
+                <option value="">BN</option>
+                <option value="">EU</option>
+              </select>
+            </div>
+            <a href="https://www.google.com/"
+              ><img src="img/mail-icon.png" alt="" />support@cmart.global</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- top_bar_end -->
+
+      <!-- mid-bar -->
+      <div class="container-fluid mid_bar d-none d-xxl-block">
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <!-- logo -->
+            <a href=""><img src="img/red.png" alt="" /></a>
+            <!-- nav-item -->
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <!-- dropdown_link -->
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle drop"
+                    href="#"
+                    id="dropdownId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >All Categories</a
+                  >
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/food.png" alt="" />Food</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/life.png" alt="" />Beauty &
+                      Health</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/baby.png " alt="" />Baby
+                      Care</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/office.png" alt="" />Cleaning
+                      Supplies</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/life.png" alt="" />Pet Care</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/home.png" alt="" />Home &
+                      Kitchen</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/life.png" alt="" />Life
+                      Style</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/office.png" alt="" />Stationary
+                      & Office</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/cook.png" alt="" />Toy & Fun</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/home.png" alt="" />Sports &
+                      Fitness</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="img/cook.png" alt="" />Vehicls</a
+                    >
+                  </div>
+                </li>
+                <!-- search form -->
+                <form class="d-flex">
+                  <input
+                    class="form-control border-0"
+                    type="text"
+                    placeholder="Im looking for..."
+                  />
+                  <button
+                    class="fas fa-search text-white border-0"
+                    type="submit"
+                  ></button>
+                </form>
+              </ul>
+
+              <!-- right_icon -->
+              <div
+                class="right_icon d-flex align-items-center justify-content-between gap-5"
+              >
+                <!--  user -->
+                <div class="user">
+                  <a href="#" class="login_btn"
+                    ><img src="img/login-icon.png" alt="" />Login</a
+                  >
+                  <div class="sign_in">
+                    <!--from -->
+                    <form action="" class="login_form">
+                      <i class="fas fa-times fa-lg cross"></i>
+                      <h2 class="text-center text-uppercase">Sign in</h2>
+                      <p>
+                        Don't have an account? To join us
+                        <a href="#" class=" ">Sign Up</a>
+                      </p>
+                      <div class="form-field">
+                        <label for="name">First Name</label>
+                        <input
+                          type="name"
+                          id="name"
+                          placeholder="name"
+                          required
+                        />
+                      </div>
+                      <div class="form-field">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="Enter your password"
+                          required
+                        />
+                      </div>
+                      <div class="text-center submit_btn">
+                        <button type="" class="btn">Confirm</button>
+                      </div>
+
+                      <p>
+                        Forgot your password?
+                        <a href="#" class="text-decoration-underline"
+                          >Recover your password</a
+                        >
+                      </p>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- love icon -->
+                <div class="love">
+                  <a href="#"><img src="img/love-icon.png" alt="" /></a>
+                </div>
+
+                <!-- cart -->
+                <div class="cart d-flex align-items-center mb-0 pb-0">
+                  <img src="img/bag-icon.png" alt="" />
+                  <div class="cart_items ps-2">
+                    <p class="count text-capitalize pt-2">
+                      Item<span class="ms-1">19</span>
+                    </p>
+                    <p class="price">BDT <span class="ms-1">21574</span></p>
+                  </div>
+                  <!--  cart todos  -->
+                  <div class="cart_todos shadow text-capitalize pt-4 pb-0">
+                    <h4>3item</h4>
+                    <h5>selected</h5>
+                    <!-- single todos -->
+                    <div
+                      class="single_todos d-flex align-items-center justify-content-around border-bottom"
+                    >
+                      <a href="#" class="btn delete_btn"
+                        ><i class="fas fa-times fa-sm"></i
+                      ></a>
+                      <img
+                        src="../img/New folder/p1.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="title">
+                        <h6 class="name">Tee-shirt ZEUS Réflective – Blan</h6>
+                        <p class="weight">250gm</p>
+                      </div>
+                      <div class="amount_btn flex-shrink-0">
+                        <div class="btns">
+                          <button class="decrease">-</button>
+                          <button
+                            class="number border-start border-end border-1"
+                          >
+                            1
+                          </button>
+                          <button class="increase">+</button>
+                        </div>
+                        <p class="text-uppercase">bdt <span>1232</span></p>
+                      </div>
+                    </div>
+
+                    <!-- single darft -->
+                    <div
+                      class="single_todos d-flex align-items-center justify-content-around border-bottom"
+                    >
+                      <a href="#" class="btn delete_btn"
+                        ><i class="fas fa-times fa-sm"></i
+                      ></a>
+                      <img
+                        src="../img/New folder/p1.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="title">
+                        <h6 class="name">Tee-shirt ZEUS Réflective – Blan</h6>
+                        <p class="weight">250gm</p>
+                      </div>
+                      <div class="amount_btn flex-shrink-0">
+                        <div class="btns">
+                          <button class="decrease">-</button>
+                          <button
+                            class="number border-start border-end border-1"
+                          >
+                            1
+                          </button>
+                          <button class="increase">+</button>
+                        </div>
+                        <p class="text-uppercase">bdt <span>1232</span></p>
+                      </div>
+                    </div>
+                    <!-- draft bottom -->
+                    <div class="cart_bottom text-capitalize d-flex">
+                      <button class="order text-center w-50">
+                        place order
+                      </button>
+                      <button class="taka text-center w-50">
+                        BDT <span>2123</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- mid-bar-end -->
+
+      <!-- navabar -->
+      <nav class="navbar navbar-expand-sm nav_bar d-none d-xxl-block">
+        <div class="container">
+          <a class="navbar-brand text-capitalize text-decoration-none" href="#"
+            ><img src="img/logo-icon.png" alt="" /><span class="ps-2"
+              >all departments</span
+            ></a
+          >
+          <!--   nav link -->
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto gap-4">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daily Need</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offer.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Flash Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ramadan</a>
+              </li>
+            </ul>
+            <div class="hot_line">
+              <a href="#" class="text-decoration-none"
+                ><img src="img/hotline-icon.svg" alt="" />
+                HOTLINE: (+880)123456790
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navabar end -->
+
+      <!-- main bar -->
+      <div class="container mainbar d-xxl-none">
+        <nav class="navbar navbar-expand-sm">
+          <div class="container">
+            <!-- menu bar -->
+            <div class="bar">
+              <img src="img/mobile-bar.png" class="barimg" alt="" />
+              <div
+                class="menu_bar bg-light position-fixed top-0 start-0 min-vh-100 min-vw-100"
+              >
+                <div class="times"><i class="fas fa-times cross"></i></div>
+                <ul class="link text-uppercase text-center list-unstyled">
+                  <li>
+                    <a href="index.html" class="text-decoration-none">Home</a>
+                  </li>
+                  <li><a href="#" class="text-decoration-none">products</a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none">daily needs</a>
+                  </li>
+                  <li><a href="#" class="text-decoration-none">members</a></li>
+                  <li>
+                    <a href="trac.html" class="text-decoration-none"
+                      >track order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html" class="text-decoration-none">faq's</a>
+                  </li>
+                  <li><a href="#" class="text-decoration-none">locator</a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      >hotline:87874874234</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- main log-->
+            <div class="main_logo">
+              <img src="img/main-logo.png" alt="" />
+            </div>
+            <!-- right icons -->
+            <div class="icons d-flex align-items-cente gap-3">
+              <!-- search -->
+              <div class="search">
+                <img
+                  class="searchimg"
+                  src="img/search.png"
+                  class="imgsearch"
+                  alt=""
+                />
+                <!-- searh bar -->
+                <div
+                  class="search_bar child bg-light position-fixed top-0 start-0 min-vh-100 min-vw-100"
+                >
+                  <!-- close btn -->
+                  <div class="times"><i class="fas fa-times cross"></i></div>
+                  <!-- input btn -->
+                  <div class="input_btn d-flex align-items-center mb-3 mt-4">
+                    <input
+                      type="text "
+                      class="w-100 search-input border-0"
+                      placeholder="Im looking for"
+                      id="search"
+                      name="search"
+                    />
+                    <button type="search" class="search-btn">
+                      <img src="img/search.png" alt="" />
+                    </button>
+                  </div>
+                  <!-- all link -->
+                  <div class="link text-capitalize">
+                    <h6 class="mt-3 ms-3">Search in:</h6>
+                    <div
+                      class="categries text-capitalize d-flex align-items-center flex-wrap gap-3 ms-3"
+                    >
+                      <a href="#" class="text-decoration-none"
+                        >all categories</a
+                      >
+                      <a href="#" class="text-decoration-none">food</a>
+                      <a href="#" class="text-decoration-none"
+                        >beauty products</a
+                      >
+                      <a href="#" class="text-decoration-none">baby food</a>
+                      <a href="#" class="text-decoration-none">stationary</a>
+                      <a href="#" class="text-decoration-none"
+                        >stationary for office</a
+                      >
+                      <a href="#" class="text-decoration-none">savion</a>
+                      <a href="#" class="text-decoration-none">beverage</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- todos-->
+              <div class="todos">
+                <img class="todoimg" src="img/bag-mobile.png" alt="" />
+                <!-- todos items -->
+                <div
+                  class="todo_items bg-light position-fixed top-0 start-0 min-vh-100 min-vw-100"
+                >
+                  <!-- close btn -->
+                  <div class="times"><i class="fas fa-times cross"></i></div>
+                  <h3 class="text-center mt-2 items_number">3 ITEMS</h3>
+                  <div class="add_box mb-3 mt-4">
+                    <h5 class="text-uppercase">Selected item</h5>
+                    <button
+                      type="button"
+                      class="add_btn bg-transparent float-end rounded-1"
+                    >
+                      + Add Items
+                    </button>
+                  </div>
+                  <!-- single todos -->
+                  <div
+                    class="single_tods d-flex align-items-center justify-content-around"
+                  >
+                    <div class="delete_btn px-2">
+                      <i class="fas fa-times fa-lg"></i>
+                    </div>
+                    <div class="todo_img px-2">
+                      <img src="img/p1.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="todo_title px-2">
+                      <p class="title">Tee-shirt ZEUS Réflective – Blanc</p>
+                      <p class="weight">250gm</p>
+                    </div>
+                    <div class="todo_btns flex-shrink-0 px-2">
+                      <div class="all_btn rounded-pill border">
+                        <button class="decrease">-</button>
+                        <button class="count border-start border-end px-3">
+                          1
+                        </button>
+                        <button class="incease">+</button>
+                      </div>
+                      <h6 class="py-2 text-center">
+                        BDT <span class="ps-2">432</span>
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div
+                    class="single_tods border-top d-flex align-items-center justify-content-around"
+                  >
+                    <div class="delete_btn px-2">
+                      <i class="fas fa-times fa-lg"></i>
+                    </div>
+                    <div class="todo_img px-2">
+                      <img src="img/p2.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="todo_title px-2">
+                      <p class="title">Tee-shirt ZEUS Réflective – Blanc</p>
+                      <p class="weight">250gm</p>
+                    </div>
+                    <div class="todo_btns flex-shrink-0 px-2">
+                      <div class="all_btn rounded-pill border">
+                        <button class="decrease">-</button>
+                        <button class="count border-start border-end px-3">
+                          1
+                        </button>
+                        <button class="incease">+</button>
+                      </div>
+                      <h6 class="py-2 text-center">
+                        BDT <span class="ps-2">432</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="single_tods border-top d-flex align-items-center justify-content-around"
+                  >
+                    <div class="delete_btn px-2">
+                      <i class="fas fa-times fa-lg"></i>
+                    </div>
+                    <div class="todo_img px-2">
+                      <img src="img/p1.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="todo_title px-2">
+                      <p class="title">Tee-shirt ZEUS Réflective – Blanc</p>
+                      <p class="weight">250gm</p>
+                    </div>
+                    <div class="todo_btns flex-shrink-0 px-2">
+                      <div class="all_btn rounded-pill border">
+                        <button class="decrease">-</button>
+                        <button class="count border-start border-end px-3">
+                          1
+                        </button>
+                        <button class="incease">+</button>
+                      </div>
+                      <h6 class="py-2 text-center">
+                        BDT <span class="ps-2">432</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="place_order d-flex align-items-center justify-content-between shadow"
+                  >
+                    <!-- place order -->
+                    <button class="btn w-50 h-100 py-2 fw-bold">
+                      Place order
+                    </button>
+                    <div class="amount w-50 text-center">
+                      <h6 class="fs-6 py-2">
+                        BDT <span class="price ps-2 fw-bold fs-6">432</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- main end -->
+    </section>
+    <!-- ========== End header ========== -->
+
+    <main class="main_container">
+      <!-- ========== Start Section ========== -->
+      <section class="f_question">
+        <div class="container">
+          <!-- heading -->
+          <div class="head_line text-center text-uppercase col-6 mx-auto">
+            <h2>FAQ</h2>
+            <h3>Have any question?</h3>
+            <p class="text-capitalize">
+              Anything else you want to know about our application process? This
+              list of frequently asked questions is a good place to start.
+            </p>
+          </div>
+          <!-- content -->
+          <div class="row content">
+            <!-- tab col -->
+            <div class="col-12 col-md-7 col-lg-8">
+              <div class="tab">
+                <!-- tab_btn -->
+                <div
+                  class="tab_btns text-center d-flex justify-content-between flex-wrap"
+                >
+                  <button
+                    class="btn tab_btn text-uppercase active"
+                    data-id="general"
+                  >
+                    General
+                  </button>
+                  <button class="btn tab_btn text-uppercase" data-id="payment">
+                    payment
+                  </button>
+                  <button class="btn tab_btn text-uppercase" data-id="shipping">
+                    shipping
+                  </button>
+                  <button class="btn tab_btn text-uppercase" data-id="returns">
+                    returns
+                  </button>
+                  <button class="btn tab_btn text-uppercase" data-id="refund">
+                    refund
+                  </button>
+                </div>
+                <div class="faq_container">
+                  <!-- single_tab -->
+                  <div class="tabcontent active" id="general">
+                    <!-- single_question -->
+                    <article class="acc px-2">
+                      <button class="acc-btn">
+                        <p>
+                          <span class="pe-2">01</span> How can we help for you?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">02</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">03</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">04</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- single_tab -->
+                  <div class="tabcontent" id="payment">
+                    <!-- single_question -->
+                    <article class="acc px-2">
+                      <button class="acc-btn">
+                        <p>
+                          <span class="pe-2">01</span> How can we help for you?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">02</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">03</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">04</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- single_tab -->
+                  <div class="tabcontent" id="shipping">
+                    <!-- single_question -->
+                    <article class="acc px-2">
+                      <button class="acc-btn">
+                        <p>
+                          <span class="pe-2">01</span> How can we help for you?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">02</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">03</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">04</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- single_tab -->
+                  <div class="tabcontent" id="returns">
+                    <!-- single_question -->
+                    <article class="acc px-2">
+                      <button class="acc-btn">
+                        <p>
+                          <span class="pe-2">01</span> How can we help for you?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">02</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">03</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">04</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- single_tab -->
+                  <div class="tabcontent" id="refund">
+                    <!-- single_question -->
+                    <article class="acc px-2">
+                      <button class="acc-btn">
+                        <p>
+                          <span class="pe-2">01</span> How can we help for you?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">02</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">03</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">04</span> The firs question is
+                          about page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">05</span>The firs question is about
+                          page?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                    <!-- single_question -->
+                    <article class="acc">
+                      <button class="acc-btn px-2">
+                        <p>
+                          <span class="pe-2">06</span>What is the goal of it?
+                        </p>
+                      </button>
+                      <div class="panel">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- forom col -->
+            <div class="col-12 col-md-5 col-lg-4">
+              <form action="" class="w-100">
+                <h3 class="text-capitalize">have any further querys</h3>
+                <h6 class="text-capitalize">contact width us</h6>
+                <div class="form_field">
+                  <div class="input_form mb-3">
+                    <input
+                      type="email"
+                      class="w-100 border-0"
+                      id="email"
+                      name="email"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="input_form">
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                      class="w-100 border-0"
+                    ></textarea>
+                  </div>
+
+                  <button class="w-100 mx-auto" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End Section ========== -->
+    </main>
+
+    <!-- ========== Start footer ========== -->
+    <section class="footer">
+      <!-- part1 -->
+      <div class="container text-capitalize py-3 py-lg-4">
+        <div class="row footer_box gy-4 gy-lg-0">
+          <!-- single box -->
+          <div class="single_box main text-center order-1 col-12 col-lg-auto">
+            <img src="img/Main.png" class="img-fluid main-img" alt="" />
+            <div class="icons">
+              <a href="#"
+                ><img src="img/facebook.png" class="img-fluid" alt=""
+              /></a>
+              <a href="#"
+                ><img src="img/twiter.png" class="img-fluid" alt=""
+              /></a>
+              <a href="#"
+                ><img src="img/insta.png" class="img-fluid" alt=""
+              /></a>
+              <a href="#"
+                ><img src="img/youtube.png" class="img-fluid" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <!-- single box -->
+
+          <div
+            class="single_box box ms-auto order-3 order-md-2 col-6 col-md-auto col-xl-3 d-flex justify-content-center justify-content-md-start"
+          >
+            <div class="">
+              <h6>cmart.global</h6>
+              <div class="link">
+                <a href="tab.html" class="text-decoration-none">about us</a>
+                <a href="tab.html" class="text-decoration-none">contact us</a>
+                <a href="blog.html" class="text-decoration-none">blogs</a>
+                <a href="offer.html" class="text-decoration-none">Offers</a>
+                <a href="faq.html" class="text-decoration-none text-uppercase"
+                  >faq's</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- single box -->
+          <div
+            class="single_box box order-4 order-md-3 col-6 col-md-auto col-xl-3 d-flex justify-content-center justify-content-md-start"
+          >
+            <div class="">
+              <h6>cmart.global</h6>
+              <div class="link">
+                <a href="tab.html " class="text-decoration-none"
+                  >term and conditons</a
+                >
+                <a href="tab.html " class="text-decoration-none"
+                  >privecy and policy</a
+                >
+                <a href="tab.html" class="text-decoration-none"
+                  >payment policy</a
+                >
+                <a href="tab.html" class="text-decoration-none"
+                  >Exchange and return</a
+                >
+                <a href="tab.html " class="text-decoration-none"
+                  >shipping policy</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- single box -->
+          <div
+            class="single_box box loaction order-2 order-md-4 col-12 col-md-auto py-4 py-lg-0"
+          >
+            <a href="loaction.html" class="text-decoration-none">
+              <div
+                class="l_box d-flex align-items-center justify-content-center"
+              >
+                <img src="img/loaction.png" class="img-fluid me-3" alt="" />
+                <div class="text ps-3 border-start border-3 text-white">
+                  <p>Lorem, ipsum.</p>
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="adress text-center">
+                <p class="phone">
+                  <img src="img/phone.png" class="img-fluid" alt="sss" /><span
+                    >09666 737333 (10am - 10pm)</span
+                  >
+                </p>
+                <p class="mail">
+                  <img src="img/mail.png" class="img-fluid" alt="sss" /><span
+                    >support@cmart.global</span
+                  >
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- border -->
+      <div class="border-top border-white border-2"></div>
+      <!-- part2 -->
+      <div
+        class="container copy_right"
+        style="background-image: url('img/bg') no-repeat center"
+        ;
+      >
+        <row class="row row-cols-1 row-cols-lg-2 pt-3 pt-lg-4">
+          <div class="copy text-center text-lg-start">
+            <p class=" ">Copyright © 2021 CITIMART.-All rights reserved</p>
+          </div>
+          <div class="img text-center text-lg-end">
+            <img src="img/card.png" class="img-fluid" alt="" />
+          </div>
+        </row>
+      </div>
+    </section>
+    <!-- ========== End  footer ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./all/swiper/swiper.min.js"></script>
+    <script src="./all/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+
+.trend{
+.container{
+   h1{
+      @include set.head1_base;
+      margin-bottom: 1rem;
+
+   }
+   .single_trend{
+      border-radius: 15px;
+      padding:1rem;
+      margin:1rem;
+      img{
+         object-fit:cover;
+
+      }
+      .trend_cont{
+         button{
+            @include set.review_btn;
+            margin-bottom: 1rem;
+            margin-top: 1rem
+         }
+         h6{
+            @include set.head6_base;
+         }
+         p{
+            @include set.text_sm;
+         }
+         .date_time{
+            p{
+               @include set.text_xs;
+               
+            }
+         }
+         .trend_link{
+            @include set.blog_link;
+         }
+      }
+   };
+}
+}
+
+
+@media (min-width:992px) {
+   .trend{
+      .container{
+         h1{
+            @include set.head1_lg;
+            margin-bottom: 1.5rem;
+      
+         }
+         .single_trend{
+            padding:1rem;
+            margin:1rem;
+      
+            .trend_cont{
+ 
+               p{
+                  @include set.text_base;
+               }
+ 
+ 
+            }
+         };
+      }
+}
+}

@@ -1,0 +1,33 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.offer{
+   padding:2rem 0rem;
+   .container{
+      .row{
+           .single_offer{
+            img{
+               max-width: 100%;
+               object-fit: cover;
+               ;
+            }
+            button{
+               background: red;
+               color:white;
+   
+            }
+            p{
+               @include set.text_xs;
+               margin:.5rem 0rem;
+            };
+            h6{
+               @include set.head6_base;
+               span{
+                  color:red;
+                  font-size: style.$text_sm;
+               }
+            }
+           }
+      }
+   }
+}

@@ -1,0 +1,107 @@
+ @use "./variable" as style;
+ 
+ @mixin grid_style($grid,  $grid_cols,$place,$justify ){
+   width: 100%;
+   display:$grid;
+   grid-template-columns:$grid_cols;
+   place-content:$place;
+   justify-content:$justify;;
+}
+
+ @mixin flex_style($flex,$justify,$align,$gap){
+  display: $flex;
+  justify-content:$justify;
+  align-items:$align;
+  gap:$gap;
+ 
+ }
+ 
+ 
+
+ @mixin head_style($font,$weight,$color){
+    font-size: $font;
+    font-weight: $weight;
+    color:$color
+ }
+
+ @mixin para_style($font,$weight,$color){
+   font-size: $font ;
+   font-weight: $weight; 
+   color:$color ;
+ 
+ 
+   
+}
+@mixin link_style($font,$weight,$color){
+  font-size: $font!important;
+  font-weight: $weight!important;;
+  color:$color!important;
+  text-decoration: none;;
+}
+
+// blog
+@mixin head6_base(){
+  font-size: 16px;
+  font-weight: 500;
+ color:#5C5D78;
+}
+
+@mixin head1_base(){
+  font-size: 32px;
+  font-weight: 700;
+ color:#B5B6C2;;
+}
+
+@mixin head1_lg(){
+  font-size: 48px;
+  font-weight: 700px;
+  color:#B5B6C2;
+}
+
+@mixin head2_base(){
+  font-size:24px;
+  font-weight: 700;
+  color:#B5B6C2;
+}
+
+@mixin head2_lg(){
+  font-size:36px;
+  font-weight: 700;
+  color:#B5B6C2;
+}
+
+
+@mixin text_xs(){
+  font-size: 12px;
+  font-weight: 400;
+  color:#B5B6C2;
+}
+
+@mixin text_sm(){
+   font-size: 14px;
+   font-weight: 400;;
+   color:#B5B6C2;
+}
+
+@mixin text_base(){
+  font-size: 16px;
+  font-weight: 400;
+  color:#B5B6C2;
+}
+
+@mixin blog_link(){
+  font-size:14px;
+  font-weight: 500;
+  text-decoration: underline;
+   color:#5C5D78;
+}
+@mixin review_btn(){
+  padding:5px 15px;
+  color:#E53F3F;
+  background:#F9F0F0;
+  border-radius: 219px;
+  font-size: 12px;
+  font-weight: 600;
+}
+ 
+ 

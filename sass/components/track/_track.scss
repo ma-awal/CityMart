@@ -1,0 +1,155 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.track_order{
+   padding:2rem 0rem;
+   .left_cont{
+      h1{
+         @include set.head_style(22px,600,#474C5A)
+      }
+      p{
+         @include set.head_style(14px,400,#7D7D7D)
+      }
+      .input_div{ 
+          margin-top:1rem;
+          input{ @include set.head_style(14px,400,#7D7D7D);
+            border:1px solid #7D7D7D;
+           padding:.5rem .2rem;
+            border-right:none;;
+            box-shadow: none;;
+            border-radius:0;
+          }
+          .track_btn{
+            background: red;
+            color:white;
+            padding:.5rem .2rem;
+             font-size: 14px
+            ;
+          }
+      }
+      h5{ @include set.head_style(20px,400,#787E8D);
+         margin-top: 1rem;;
+        
+          .invoice{
+            color:#263238
+          }
+
+      }
+   }
+
+   .right_cont{
+      h5{
+         @include set.head_style(18px,400,#474C5A);
+
+      }
+      h2{
+         @include set.head_style(22px,400,#FF0000);
+
+      }
+      .adress{
+         h4{
+            @include set.head_style(16px,400,#474C5A);
+         }
+         p{
+            @include set.para_style(14px,400,#474C5A);
+         }
+      }
+   }
+}
+
+@media (min-width:992px) {
+   .track_order{
+      padding:3rem 0rem;
+      .left_cont{
+         h1{
+            @include set.head_style(36px,600,#474C5A);
+            margin-bottom: 2rem;;
+         }
+     
+         p{
+            @include set.head_style(16px,400,#7D7D7D)
+         }
+         .input_div{ 
+             margin-top:2rem;
+             input{ 
+              padding:.7rem .3rem;
+             }
+             .track_btn{
+               padding:.7rem .3rem;
+             }
+         }
+         h5{ @include set.head_style(24px,400,#787E8D);
+            margin-top:2rem;;
+           
+         }
+      }
+   
+      .right_cont{
+         h5{
+            @include set.head_style(22px,400,#474C5A);
+   
+         }
+         h2{
+            @include set.head_style(24px,400,#FF0000);
+   
+         }
+         .adress{
+            h4{
+               @include set.head_style(18px,400,#474C5A);
+            }
+            p{
+               @include set.para_style(16px,400,#474C5A);
+            }
+         }
+      }
+   }
+}
+
+
+
+@media (min-width:1180px) {
+   .track_order{
+      padding:3rem 0rem;
+      .left_cont{ max-width: 500px;
+         h1{ margin-bottom: 2rem;;
+            @include set.head_style(42px,600,#474C5A)
+         }
+         p{
+            @include set.head_style(16px,400,#7D7D7D)
+         }
+         .input_div{ 
+             margin-top:3rem;
+             input{ 
+              padding:.7rem .3rem;
+             }
+             .track_btn{
+               padding:.7rem .3rem;
+             }
+         }
+         h5{ @include set.head_style(24px,400,#787E8D);
+            margin-top: 1.2rem;;
+           
+         }
+      }
+   
+      .right_cont{
+         h5{
+            @include set.head_style(24px,400,#474C5A);
+            margin-bottom: 2rem
+         }
+         h2{
+            @include set.head_style(28px,400,#FF0000);
+            margin-bottom: 1rem
+         }
+         .adress{  margin-top: 1.5rem;
+            h4{
+               @include set.head_style(20px,400,#474C5A);
+
+            }
+            p{
+               @include set.para_style(16px,400,#474C5A);
+            }
+         }
+      }
+   }
+}

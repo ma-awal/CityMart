@@ -1,0 +1,63 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.location{
+   .container{
+      .search{
+         h1{
+            @include set.head1_base;
+         }
+         .input_div{
+            @include set.text_xs;
+            box-shadow: none;
+            outline: none;;
+            border-right:none;
+         }
+         button{
+            background: red;;
+            padding: 0rem .5rem;
+            border: none;
+         }
+      }
+      .box{
+         h6{
+            letter-spacing: 2px;
+            @include set.head6_base;
+         }
+         p{
+            @include set.text_xs;
+             margin:8px 0px;
+             line-height: 18px;;
+         }
+      }
+   }
+}
+
+@media (min-width:992px) {
+   .location{
+   .container{
+      .search{
+         h1{
+            @include set.head1_lg;
+         }
+         .input_div{
+            @include set.text_xs;
+   
+         }
+   
+      }
+      .box{
+         h6{
+            letter-spacing: 3px;
+            @include set.head2_base;
+            font-weight: 600
+         }
+         p{
+            @include set.text_base;
+             margin:10px 0px;
+              
+         }
+      }
+   }
+}
+}

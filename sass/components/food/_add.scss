@@ -1,0 +1,45 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.add {
+  margin-top: 40px;
+  .add_left {
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  .add_right {
+    .add_place {
+      margin-top: 24px;
+      background: style.$text_red;
+      border-radius: 25px;
+      padding: 32px 16px;
+      .add_info {
+        p {
+          @include set.head_style(16px, 400, #ffffff);
+          margin-bottom: 4px;
+        }
+        h6 {
+          @include set.para_style(20px, 400, #ffffff);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1040px) {
+  .add {
+    .add_right {
+      .add_place {
+        .add_info {
+          margin-left: 1rem;
+
+          h6 {
+            @include set.para_style(24px, 600, #ffffff);
+          }
+        }
+      }
+    }
+  }
+}

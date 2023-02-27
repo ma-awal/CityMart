@@ -1,0 +1,62 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+.adds {
+  
+  .adds_section {
+    .left_item {
+      padding: 30px 40px;
+      background: #f5f5f5;
+      border-radius: 15px;
+      .title {
+        .date {
+          @include set.para_style(12px, 400px, #787e8d);
+          margin-bottom: 0;
+        }
+        .discount {
+          @include set.head_style(14px, 500, #474c5a);
+          margin-top: 10px;
+        }
+        a {
+          margin-top: 20px;
+          @include set.link_style(14px, 400, #ff0000);
+          padding: 8px 16px;
+          border-color: style.$text_red;
+          &:hover {
+            background: style.$text_red !important;
+            color: style.$text_white !important;
+          }
+        }
+      }
+    }
+    .right_item {
+      @extend .left_item;
+    }
+  }
+}
+
+// media query
+@media (min-width: 768px) {
+  .adds_section {
+    .title {
+      .discount {
+        font-size: 18px !important;
+      }
+      a {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .adds_section {
+    .title {
+      .discount {
+        font-size: 24px !important;
+      }
+      a {
+        margin-top: 40px;
+      }
+    }
+  }
+}

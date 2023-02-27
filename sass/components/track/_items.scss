@@ -1,0 +1,49 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.items{
+   h2 {
+      color:#474C5A;
+      font-size: 22px;
+      font-weight: 500
+   }
+   .list{
+      li{
+         p{
+            @include set.para_style(14px,400,#474C5A);
+
+         }
+         .num{
+          color:#BBBBBB!important;
+           
+         }
+         .tk{
+            color:#BBBBBB!important;
+         }
+      }
+   }
+}
+
+@media (min-width:992px) {
+
+   .items{
+      h2 {
+         color:#474C5A;
+         font-size: 28px;
+         font-weight: 500
+      }
+      .list{
+         li{
+            p{
+               @include set.para_style(16px,400,#474C5A);
+   
+            }
+ 
+         }
+      }
+   }
+   
+
+ 
+   }
+ 

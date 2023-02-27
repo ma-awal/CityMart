@@ -1,0 +1,165 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.f_question{
+   form{
+      background: #F5F5F5;
+      border-radius: 15px;
+      padding:2rem 1rem; 
+      h3{
+         @include set.head_style(18px,500,#474C5A);
+         margin-bottom: 10px 
+      }
+      h6{
+         @include set.head_style(16px,500,#FF0000);
+         margin-bottom: 1rem;;
+      }
+      .form_field{
+         
+       .input_form{
+         input{
+            outline: none;
+            box-shadow: none;
+            background:#FFFFFF;
+            @include set.para_style(14px,400,#474C5A);
+            border-radius:8px;
+            padding: .5rem  
+         }
+         
+       }
+       .input_form{
+         textarea{ 
+            outline: none;
+            box-shadow: none;
+            background:#FFFFFF;
+            @include set.para_style(14px,400,#474C5A);
+            border-radius:8px;
+            padding:.5rem;;
+       }
+ 
+
+      }
+      button{ box-shadow: none;
+         margin-top: 1rem;
+         @include set.para_style(14px,600,white); 
+         background: red;
+         padding: .4rem;
+         border-radius: 8px;;
+         box-shadow: none;; 
+         &:hover{
+            background: transparent;
+            border:1px solid red;
+            color:red;
+         }
+    }
+   }
+
+}
+}
+
+@media (min-width:768px) {
+   .f_question{
+      form{
+         background: #F5F5F5;
+         border-radius: 15px;
+         padding:2rem 1rem; 
+         h3{
+            @include set.head_style(18px,600,#474C5A);
+            margin-bottom: 10px 
+         }
+         h6{
+            @include set.head_style(16px,600,#FF0000);
+            margin-bottom: 1rem;;
+         }
+         .form_field{
+            
+          .input_form{
+            input{
+               outline: none;
+               box-shadow: none;
+               background:#FFFFFF;
+               @include set.para_style(14px,400,#474C5A);
+               border-radius:8px;
+               padding: .5rem  
+            }
+            
+          }
+          .input_form{
+            textarea{ 
+               outline: none;
+               box-shadow: none;
+               background:#FFFFFF;
+               @include set.para_style(14px,400,#474C5A);
+               border-radius:8px;
+               padding:.5rem;;
+          }
+    
+   
+         }
+         button{ box-shadow: none;
+            margin-top: 1rem;
+            @include set.para_style(14px,600,white); 
+            background: red;
+            padding: .4rem;
+            border-radius: 8px;;
+            box-shadow: none;; 
+       }
+      }
+   
+   }
+   }
+}
+
+
+
+ 
+
+
+@media (min-width:992px) {
+   .f_question{
+      form{
+         padding:3rem 3rem; 
+         h3{ font-weight:800;
+            font-size: 24px;
+            margin-bottom: 16px 
+         }
+         h6{font-size: 18px;
+            margin-bottom: 1rem;;
+            font-weight: 600;
+         }
+         .form_field{
+          .input_form{
+            input{
+               padding: .7rem .5rem
+            }
+            
+          }
+          .input_form{
+            textarea{ padding: .7rem .5rem
+          }
+    
+   
+         }
+         button{  
+            padding: .5rem;
+           
+       }
+      }
+   
+   }
+   }
+}
+
+
+@media (min-width:1180px) {
+   .f_question{
+      form{
+         padding:3rem 3rem; 
+         h3{ font-weight:600;
+            font-size: 28px;
+           
+         }
+   
+   }
+   }
+}

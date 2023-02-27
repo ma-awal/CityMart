@@ -1,0 +1,16 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.banner_link {
+  padding: 2rem 0rem;
+  .link_box {
+    a {
+      @include set.link_style(14px, 400, #ff0000);
+      border-color: style.$text_gray1 !important;
+      &:hover {
+        color: style.$text_white !important;
+        background: style.$text_red !important;
+      }
+    }
+  }
+}

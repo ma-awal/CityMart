@@ -1,0 +1,100 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+ .header{
+   position: fixed;
+   top:0;
+   right: 0;
+   left: 0;;
+   z-index: 9999;
+ }
+  .top_bar {
+    background: style.$text_gray1;
+
+    .left_icon {
+      a {
+        @include set.link_style(14px, 400,#7D7D7D);
+        border-right: 1px solid style.$text_gray3;
+        padding: 0px 12px;
+        img {
+          padding-right: 12px;
+        }
+      }
+      :nth-child(1) {
+        padding-left: 0;
+      }
+      :nth-child(3) {
+        padding-right: 0;
+        border: none;
+        .locate{
+          transform: translateX(-100%);
+          background:#a3a3a483;
+          backdrop-filter: blur(4px);
+          z-index: 10000;
+           width: 100%;
+           height: 100%;
+           form{ border-radius: 12px;;
+            padding:2rem;
+            background: style.$text_white;
+            input{
+              @include set.para_style(14px,400,#d2d0cf);
+              padding:16px 16px;
+              border-radius: 5px;
+              background-color:#F7F7F7;
+              box-shadow:none;
+              border:none!important; 
+              ;
+            }
+           }
+           &.show{
+            transform: translateX(0);
+           }
+        }
+
+      }
+      .location{
+        transform: translateX(-100%);
+        background:#a6a6a67b;
+        backdrop-filter: blur(2px);
+        z-index: 10000;
+        .location_form{
+          background: style.$text_white;
+          border-radius: 12px;;
+          padding:3rem 1rem;
+          input{ text-transform: capitalize;
+            @include set.para_style(14px,400,#DFDCDA);
+            background: style.$text_gray4;
+            border-radius: 8px;;
+          }
+         
+        }
+ 
+        
+      }
+    }
+    .right {
+      .form-select {
+        background: transparent;
+        box-shadow: none;
+        font-size: style.$text_sm;
+        color: style.$text_gray3;
+        cursor: pointer;
+        border: 0;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          vertical-align: middle;
+        }
+      }
+      a {
+        @include set.link_style(14px, 400,#7D7D7D);
+        color: style.$text_gray3;
+        img {
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+  

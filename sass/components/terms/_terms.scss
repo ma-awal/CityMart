@@ -1,0 +1,154 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.terms_condition{
+   .btn_container{
+      .btn{
+         @include set.para_style(14px,400,#474c5a);
+         box-shadow:none;
+         
+         &.active{
+            border-right: 2px solid red!important;
+            border-radius: 0px;;
+         }
+      }
+   }
+   .tab_container{
+      .tabcontent{
+          display:none;;
+          h2{
+            @include set.head_style(20px,700px,#474c5a);
+          }
+          P{
+            @include set.para_style(14px,400px,#474c5a);
+          }
+          ul{
+            list-style-type: disc;;
+            li{
+               @include set.head_style(14px,400px,#474c5a);
+            }
+          }
+          form{
+            label{
+               @include set.para_style(14px,400px,#474c5a);
+            }
+          input{
+               @include set.para_style(14px,400px,#474c5a);
+               border:none;
+               outline:none;
+               border:1px solid red;
+               border-radius: 5px;;
+               box-shadow: none;;
+            }
+            textarea{
+               @include set.para_style(14px,400px,#474c5a);
+               border:none;
+               outline:none;
+               border:1px solid red;
+               border-radius: 5px;;
+               box-shadow: none;;
+            }
+            .btn{
+               background: red;
+               color:#FFFFFF;
+                 font-size: 12px;;
+                border-radius: 5px;
+                padding:4px 16px;
+            }
+
+
+            .cont_box{
+               h6{
+                  @include set.head_style(18px,400px,#474c5a);
+               }
+               p{
+                  @include set.head_style(14px,400px,#474c5a);
+               }
+            }
+          }
+          &.active{
+            display:block
+          }
+      }
+   }
+}
+
+
+
+
+
+
+@media (min-width:768px) {
+   .terms_condition{
+      .tab_container{
+         .tabcontent{
+             h2{
+               @include set.head_style(24px,700px,#474c5a);
+             }
+             }
+      }
+   }
+}
+
+
+
+
+
+@media (min-width:1180px) {
+   .terms_condition{
+      .btn_container{
+         .btn{
+            @include set.para_style(16px,400,#474c5a);
+            box-shadow:none;
+ 
+         }
+      }
+      .tab_container{
+         .tabcontent{
+   
+             h2{
+               @include set.head_style(36px,700px,#474c5a);
+             }
+             P{
+               @include set.para_style(16px,400px,#474c5a);
+             }
+             ul{
+               list-style-type: disc;;
+               li{
+                  @include set.head_style(16px,400px,#474c5a);
+               }
+             }
+             form{
+               label{
+                  @include set.para_style(16px,400px,#474c5a);
+               }
+             input{
+                  @include set.para_style(16px,400px,#474c5a);
+ 
+               }
+               textarea{
+                  @include set.para_style(16px,400px,#474c5a);
+  
+               }
+               .btn{
+                    font-size: 14px;;
+               }
+   
+   
+               .cont_box{
+                  h6{
+                     @include set.head_style(20px,500px,#474c5a);
+                  }
+                  p{
+                     @include set.head_style(16px,400px,#474c5a);
+                  }
+               }
+             }
+             &.active{
+               display: show;
+             }
+         }
+      }
+   }
+   
+}

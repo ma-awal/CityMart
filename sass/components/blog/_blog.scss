@@ -1,0 +1,16 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.blog{
+ min-height: 245px;
+ max-height: 100%;
+  
+}
+
+@media (min-width:992px) {
+ .blog{
+   min-height: 500px;;
+ }
+   
+}
+

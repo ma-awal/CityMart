@@ -1,0 +1,160 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.footer {
+  padding: 2rem 0rem;
+  background-color: rgb(51, 55, 61);;
+  .container {
+      .main-img{
+         max-width: 30%;
+          
+      }
+    .footer_box {
+      .box {
+        h6 {
+          @include set.head_style(16px, 600, #ffffff);
+          position: relative;
+          padding-bottom: 8px;
+          &::after {
+            content: "";
+            width: 15%;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+          }
+        }
+
+        .link {
+          a {
+            @include set.link_style(14px, 400, #ffffff);
+            display: block;
+            line-height: 28px;
+            color: style.$text_white;
+          }
+        }
+      }
+      .main {
+        .icons {
+          margin-top: 1rem;
+        }
+      }
+      .loaction {
+        max-width: 374px;
+        margin: 0 auto;
+        .l_box {
+          padding: 22px 20px;
+          margin-bottom: 1rem;
+          border-radius: 20px;
+          border: 2px solid white;
+          .text {
+            p {
+              @include set.para_style(14px, 500, #ffffff);
+              margin-bottom: 4px;
+            }
+            h5 {
+              @include set.head_style(20px, 600, #ffffff);
+            }
+          }
+        }
+        .adress {
+          p {
+            margin-bottom: 6px;
+            @include set.para_style(16px, 600, #ffffff);
+            img {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copy_right {
+    .copy {
+      p {
+        @include set.para_style(14px, 500, #ffffff);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-img{
+    min-width: 100%;
+     
+ }
+  .footer {
+    padding: 2.5rem 0rem;
+    .container {
+      .footer_box {
+        .box {
+          h6 {
+            @include set.head_style(20px, 600, #ffffff);
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 8px;
+            &::after {
+              content: "";
+              width: 25%;
+              background: white;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 3px;
+              border-radius: 5px;
+            }
+          }
+
+          .link {
+            a{
+              @include set.link_style(16px, 500, #ffffff);
+              display: block;
+              line-height: 38px;
+              color: style.$text_white;
+            }
+          }
+        }
+        .main {
+          .icons {
+            margin-top: 1.5rem;
+            a {
+              margin-right: 8px;
+            }
+            &::nth-child-last() {
+              margin-right: 0px;
+            }
+          }
+        }
+        .loaction {
+          max-width: 374px;
+          margin: 0 auto;
+          .l_box {
+            padding: 22px 30px;
+            margin-bottom: 1rem;
+            border-radius: 20px;
+            border: 2px solid white;
+            .text {
+              p {
+                @include set.para_style(16px, 500, #ffffff);
+                margin-bottom: 4px;
+              }
+              h5 {
+                @include set.head_style(22px, 500, #ffffff);
+              }
+            }
+          }
+          .adress {
+            p {
+              margin-bottom: 6px;
+              @include set.para_style(18px, 600, #ffffff);
+              img {
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

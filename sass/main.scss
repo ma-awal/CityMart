@@ -1,0 +1,15 @@
+@forward "./base/index";
+@forward "./components/index";
+@forward "./utilitis/index";
+@use './utilitis/variable'as style;
+@use './utilitis/mixin'as set;
+
+
+.main_container{
+   padding-top: 45px;
+ }
+ @media (min-width:1399px) {
+   .main_container{
+      padding-top: 140px;;
+   }
+ }

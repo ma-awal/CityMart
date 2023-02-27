@@ -1,0 +1,64 @@
+@use "../../utilitis/mixin" as set;
+@use "../../utilitis/variable" as style;
+
+.food {
+  .food_title {
+    h2 {
+      @include set.head_style(22px, 700, #474c5a);
+      margin: 2rem 0rem;
+      img {
+        max-width: 10%;
+      }
+    }
+  }
+
+  .container {
+    .row {
+      .box_img {
+        text-transform: capitalize;
+
+        a {
+          img {
+            border-radius: 15px;
+          }
+          text-decoration: none;
+          p {
+            @include set.para_style(14px, 500px, #474c5a);
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:768px) {
+    .food{
+      .food_title{
+         h2{
+            font-size: 28px;
+         }
+      }
+    }
+}
+
+@media (min-width:992px) {
+   .food{
+     .food_title{
+        h2{
+           font-size: 34px;
+        }
+     }
+   }
+}
+
+@media (min-width:1180px) {
+   .food{
+     .food_title{
+        h2{
+           font-size: 40px;
+        }
+     }
+   }
+}
